@@ -1,0 +1,125 @@
+﻿{
+  "info" : {
+    "version" : 230327,
+    "lite" : false,
+    "hasTextsFile" : false
+  },
+  "nodes" : [
+    {
+      "$id" : 0,
+      "$type" : "beg",
+      "$conns" : [
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "$id" : 2,
+      "$type" : "cho",
+      "text" : "Yes, hallo, I am Examplia.",
+      "icon" : 1,
+      "once" : 0,
+      "$conns" : [
+        [
+          6,
+          0,
+          7,
+          0,
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "$id" : 3,
+      "$type" : "con",
+      "conditionType" : 0,
+      "variable" : "already_met",
+      "$conns" : [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "$id" : 4,
+      "$type" : "txt",
+      "text" : "Welcome back!",
+      "byType" : 0,
+      "$conns" : [
+        [
+          7,
+          0,
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "$id" : 5,
+      "$type" : "txt",
+      "text" : "Greetings - I don't know you.",
+      "byType" : 0,
+      "$conns" : [
+        [
+          2,
+          0,
+          7,
+          0,
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "$id" : 6,
+      "$type" : "set",
+      "varType" : 0,
+      "variable" : "already_met",
+      "$conns" : [
+      ]
+    },
+    {
+      "$id" : 7,
+      "$type" : "cho",
+      "text" : "How are you?",
+      "icon" : 0,
+      "iconID" : "",
+      "once" : 0,
+      "$conns" : [
+        [
+          10,
+          0
+        ]
+      ]
+    },
+    {
+      "$id" : 8,
+      "$type" : "cho",
+      "text" : "I am leaving!",
+      "icon" : 2,
+      "once" : 0,
+      "$conns" : [
+        [
+        ]
+      ]
+    },
+    {
+      "$id" : 10,
+      "$type" : "txt",
+      "text" : "I am fine, thank you.\n\nBut I just ate, so please let me rest.",
+      "byType" : 0,
+      "$conns" : [
+        [
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "info": {
+    "version": 230327,
+    "lite": true,
+    "hasTextsFile": false
+  },
+  "nodes": [
+    {
+      "$id": 0,
+      "$type": "beg",
+      "$conns": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 1,
+      "$type": "txt",
+      "text": "Hallo, wie gehts?",
+      "byType": 0,
+      "$conns": [
+        [
+          9,
+          0,
+          10,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 8,
+      "$type": "txt",
+      "text": "ende",
+      "byType": 0,
+      "$conns": [
+        []
+      ]
+    },
+    {
+      "$id": 9,
+      "$type": "cho",
+      "text": "gut",
+      "icon": 0,
+      "iconID": "",
+      "once": 0,
+      "$conns": [
+        [
+          12,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 10,
+      "$type": "cho",
+      "text": "schlecht",
+      "icon": 0,
+      "iconID": "",
+      "once": 0,
+      "$conns": [
+        [
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 11,
+      "$type": "txt",
+      "text": "manno",
+      "byType": 0,
+      "$conns": [
+        [
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 12,
+      "$type": "txt",
+      "text": "ohh, toll",
+      "byType": 0,
+      "$conns": [
+        [
+          8,
+          0
+        ]
+      ]
+    }
+  ]
+}
