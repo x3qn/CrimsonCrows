@@ -1,0 +1,289 @@
+{
+  "info": {
+    "version": 230327,
+    "lite": true,
+    "hasTextsFile": false
+  },
+  "nodes": [
+    {
+      "$id": 0,
+      "$type": "beg",
+      "$conns": [
+        [
+          30,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 1,
+      "$type": "txt",
+      "text": "Wie kann ich helfen?",
+      "byType": 0,
+      "$conns": [
+        [
+          10,
+          0,
+          11,
+          0,
+          12,
+          0,
+          13,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 10,
+      "$type": "cho",
+      "text": "Ich suche Arbeit.",
+      "icon": 0,
+      "iconID": "",
+      "once": 0,
+      "$conns": [
+        [
+          15,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 11,
+      "$type": "cho",
+      "text": "Ein Bier, bitte.",
+      "icon": 0,
+      "iconID": "",
+      "once": 0,
+      "$conns": [
+        [
+          19,
+          0,
+          20,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 12,
+      "$type": "cho",
+      "text": "Tschüss.",
+      "icon": 0,
+      "iconID": "",
+      "once": 0,
+      "$conns": [
+        [
+          25,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 13,
+      "$type": "cho",
+      "text": "Erzähl mir ein Geheimnis.",
+      "icon": 0,
+      "iconID": "",
+      "once": 2,
+      "$conns": [
+        [
+          14,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 14,
+      "$type": "txt",
+      "text": "Der Keller hat Dreck am stecken.",
+      "byType": 0,
+      "$conns": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 15,
+      "$type": "con",
+      "conditionType": 0,
+      "variable": "quest_accepted",
+      "$conns": [
+        [
+          16,
+          0
+        ],
+        [
+          17,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 16,
+      "$type": "txt",
+      "text": "Die Aufgabe kennst du schon.",
+      "byType": 0,
+      "$conns": [
+        []
+      ]
+    },
+    {
+      "$id": 17,
+      "$type": "txt",
+      "text": "Bring mir drei Fässer aus dem Keller!",
+      "byType": 0,
+      "$conns": [
+        []
+      ]
+    },
+    {
+      "$id": 19,
+      "$type": "set",
+      "varType": 2,
+      "variable": "bier",
+      "setType": 1,
+      "value": 1,
+      "$conns": []
+    },
+    {
+      "$id": 20,
+      "$type": "con",
+      "conditionType": 1,
+      "variable": "bier",
+      "compareType": 5,
+      "value": 4,
+      "default": 0,
+      "$conns": [
+        [
+          21,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 21,
+      "$type": "txt",
+      "text": "Genug für heute! Raus mit dir.",
+      "byType": 0,
+      "$conns": [
+        [
+          37,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 25,
+      "$type": "swi",
+      "casesCount": 1,
+      "switchType": 2,
+      "valRnd0": 6,
+      "valRnd1": 3,
+      "valRnd2": 1,
+      "$conns": [
+        [
+          26,
+          0
+        ],
+        [
+          27,
+          0
+        ],
+        [
+          28,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 26,
+      "$type": "txt",
+      "text": "Auf Wiedersehen!",
+      "byType": 0,
+      "$conns": [
+        []
+      ]
+    },
+    {
+      "$id": 27,
+      "$type": "txt",
+      "text": "Komm bald wieder.",
+      "byType": 0,
+      "$conns": [
+        []
+      ]
+    },
+    {
+      "$id": 28,
+      "$type": "txt",
+      "text": "Machs gut!",
+      "byType": 0,
+      "$conns": [
+        [
+          29,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 29,
+      "$type": "txt",
+      "text": "Und lass dich nicht erwischen.",
+      "byType": 0,
+      "$conns": [
+        []
+      ]
+    },
+    {
+      "$id": 30,
+      "$type": "txt",
+      "text": "Willkommen in der Taverne, Fremder!",
+      "byType": 0,
+      "$conns": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 31,
+      "$type": "cho",
+      "text": "Danke",
+      "icon": 0,
+      "iconID": "",
+      "once": 0,
+      "$conns": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 36,
+      "$type": "txt",
+      "text": "Sonst noch was?",
+      "byType": 0,
+      "$conns": [
+        [
+          11,
+          0,
+          31,
+          0
+        ]
+      ]
+    },
+    {
+      "$id": 37,
+      "$type": "scr",
+      "script": "Close Dialog",
+      "$conns": []
+    }
+  ]
+}
